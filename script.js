@@ -6,6 +6,7 @@ const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
+const catVid = document.querySelector(".cat-vid");
 
 const MAX_IMAGES = 7;
 
@@ -31,7 +32,10 @@ function handleYesClick() {
   title2Element.innerHTML = "Yayyy!! :3";
   titleElement.innerHTML = "";
   buttonsContainer.classList.add("hidden");
-  changeImage("yes");
+  catImg.classList.add("hidden");
+  catVid.style.display = null;
+  catVid.src = `img/yes.mp4`;
+  catVid.play();
 }
 
 function resizeYesButton() {

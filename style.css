@@ -24,7 +24,13 @@ body {
 }
 
 .cat-img {
-  width: 30rem;
+  /* width: 30rem; */
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+
+.cat-vid {
+  /* width: 30rem; */
   height: 30rem;
   margin-bottom: 2rem;
 }
